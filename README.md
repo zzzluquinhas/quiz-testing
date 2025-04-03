@@ -3,7 +3,7 @@
 # Quiz testing example
 
 Neste exercício, iremos melhorar os testes de unidade de sistema de quiz.
-Você deve realizar os 5 commits descritos abaixo e submeter os 5 links dos commits via Moodle.
+Você deve realizar os 3 commits descritos abaixo e submeter os 3 links dos commits via Moodle.
 
 ### Overview
 
@@ -31,7 +31,7 @@ def test_create_choice():
 ...
 ```
 
-Você deve realizar os 5 commits descritos abaixo e submeter os 5 links dos commits via Moodle.
+Você deve realizar os 3 commits descritos abaixo e submeter os 3 links dos commits via Moodle.
 
 # Commit 1: Running the tests
 
