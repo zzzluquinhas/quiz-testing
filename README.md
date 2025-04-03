@@ -82,7 +82,6 @@ tests.py::test_create_multiple_questions PASSED                                 
 tests.py::test_create_question_with_invalid_title PASSED                                           [ 60%]
 tests.py::test_create_question_with_valid_points PASSED                                            [ 80%]
 tests.py::test_create_choice PASSED                                                                [100%]
-
 =========================================== 5 passed in 0.01s ============================================
 ```
 
@@ -93,3 +92,40 @@ Portanto, para rodar os testes no GitHub Actions, realize uma alteração qualqu
 
 Em seguida, clique na aba `Actions` e veja que os testes foram executados com sucesso no GitHub Actions. 
 Observe as execuções em múltiplos sistemas operacionais e versões da linguagem Python.
+
+# Commit 2: Creating 10 unit tests
+
+Crie mais dez testes de unidade no arquivo `tests.py`.
+Utilize boas práticas, tais como (1) testar comportamentos, não métodos, (2) testar através de API pública e (3) criar testes pequenos e focados.
+
+Rode os testes localmente com o comando `pytest -v tests.py`.
+Só faça o commit com os testes passando.
+
+#### Faça o commit das alterações
+Com os testes passando, faça o commit com a seguinte mensagem *Commit 2: Creating 10 unit tests*.
+
+# Commit 3: Testing with fixtures
+
+Crie pelo menos mais dois testes de unidade utilizando as [fixtures do pytest](https://docs.pytest.org/en/stable/explanation/fixtures.html).
+Por exemplo, você pode incluir na fixture uma questão com múltiplas escolhas, e esta questão será reutilizada nos testes.
+
+Um exemplo simples do uso fixtures pode ser visto abaixo:
+
+```python
+@pytest.fixture
+def data():
+    return [1,2,3]
+
+def test_sum(data):
+    assert sum(data) == 6
+
+def test_max(data):
+    assert max(data) == 3
+
+def test_in(data):
+    assert 1 in data
+```
+
+#### Faça o commit das alterações
+Com os testes passando, faça o commit com a seguinte mensagem *Commit 3: Testing with fixtures*.
+
