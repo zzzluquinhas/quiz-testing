@@ -74,7 +74,7 @@ $ pip install pytest
 Para executar os testes localmente, basta rodar o comando `pytest -v tests.py`:
 
 ```
-pytest -v ./tests.py
+pytest -v tests.py
 ========================================== test session starts ===========================================
 ...                                                                                     
 tests.py::test_create_question PASSED                                                              [ 20%]
