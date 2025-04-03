@@ -2,7 +2,7 @@
 
 # Quiz testing example
 
-Neste exercício, iremos melhorarar os testes de unidade de sistema de quiz.
+Neste exercício, iremos melhorar os testes de unidade de sistema de quiz.
 Você deve realizar os 5 commits descritos abaixo e submeter os 5 links dos commits via Moodle.
 
 ### Overview
@@ -88,7 +88,7 @@ tests.py::test_create_choice PASSED                                             
 ### Rode os testes remotamente (via GitHub Actions)
 
 Os testes são executados automaticamente no GitHub Actions sempre que um commit é realizado.
-Portanto, para rodar os testes no GitHub Actions, realize uma alteração qualquer neste aquivo `README.md` e faça o commit da alteração com a seguinte mensagem *Commit 1: Running the tests*.
+Portanto, para rodar os testes no GitHub Actions, realize uma alteração qualquer neste arquivo `README.md` e faça o commit da alteração com a seguinte mensagem: *Commit 1: Running the tests*.
 
 Em seguida, clique na aba `Actions` e veja que os testes foram executados com sucesso no GitHub Actions. 
 Observe as execuções em múltiplos sistemas operacionais e versões da linguagem Python.
@@ -102,7 +102,7 @@ Rode os testes localmente com o comando `pytest -v tests.py`.
 Só faça o commit com os testes passando.
 
 #### Faça o commit das alterações
-Com os testes passando, faça o commit com a seguinte mensagem *Commit 2: Creating 10 unit tests*.
+Com os testes passando, faça o commit com a seguinte mensagem: *Commit 2: Creating 10 unit tests*.
 
 # Commit 3: Testing with fixtures
 
@@ -127,5 +127,5 @@ def test_in(data):
 ```
 
 #### Faça o commit das alterações
-Com os testes passando, faça o commit com a seguinte mensagem *Commit 3: Testing with fixtures*.
+Com os testes passando, faça o commit com a seguinte mensagem: *Commit 3: Testing with fixtures*.
 
