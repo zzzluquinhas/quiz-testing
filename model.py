@@ -66,7 +66,6 @@ class Question:
         choice = self._find_choice_by_id(id)
         self.choices.remove(choice)
 
-
     """
     Removes all choices from the question.
     """
