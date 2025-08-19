@@ -46,7 +46,7 @@ Caso tenha dúvidas, verifique a documentação do GitHub sobre como [criar fork
 ### Ative o GitHub Actions para rodar os testes a cada commit
 
 Neste projeto, utilizamos o GitHub Actions (ferramenta de CI/CD do GitHub) para executar os testes automaticamente a cada commit.
-Abra o arquivo`.github/workflows/tests.yml` e observe que os testes são executados em três sistemas operacionais (Ubuntu, macOS e Windows) e várias versões da linguagem Python. Veja um exemplo em https://github.com/andrehora/quiz/actions/runs/14231638679.
+Abra o arquivo [.github/workflows/tests.yml](https://github.com/andrehora/quiz/blob/main/.github/workflows/tests.yml) e observe que os testes são executados em três sistemas operacionais (Ubuntu, macOS e Windows) e várias versões da linguagem Python. Veja um exemplo em https://github.com/andrehora/quiz/actions/runs/14231638679.
 
 Ative o GitHub Actions no seu repositório.
 Para isso, basta ir na aba `Actions` e clicar no botão verde.
