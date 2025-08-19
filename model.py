@@ -108,7 +108,7 @@ class Question:
         if len(selected_choice_ids) > self.max_selections:
             raise Exception(f'Cannot select more than {self.max_selections} choices')
         
-        return [selected_choice_id for selected_choice_id in selected_choice_ids if selected_choice_id in self._correct_choice_ids()]
+        return [selected_choice_id for selected_choice_id in selected_choice_ids if selected_choice_id in self._find_correct_choice_ids()]
     
     def _create_choice(self, text, is_correct) -> Choice:
         return Choice(id=self._generate_choice_id(), text=text, is_correct=is_correct)
@@ -126,13 +126,13 @@ class Question:
                 return choice
         return None
     
-    def _correct_choice_ids(self) -> list[int]:
+    def _find_correct_choice_ids(self) -> list[int]:
         return [choice.id for choice in self.choices if choice.is_correct]
 
     def _check_valid_choice_id(self, choice_id):
-        if choice_id not in self._choice_ids():
+        if choice_id not in self._list_choice_ids():
             raise Exception(f'Invalid choice id {choice_id}')
         
-    def _choice_ids(self) -> list[int]:
+    def _list_choice_ids(self) -> list[int]:
         return [choice.id for choice in self.choices]
         
