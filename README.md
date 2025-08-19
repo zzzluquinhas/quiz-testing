@@ -85,13 +85,13 @@ tests.py::test_create_choice PASSED                                             
 =========================================== 5 passed in 0.01s ============================================
 ```
 
-### Rode os testes remotamente (via GitHub Actions)
+### Commit para executar os testes remotamente (via GitHub Actions)
 
-Os testes são executados automaticamente no GitHub Actions sempre que um commit é realizado.
-Portanto, para rodar os testes no GitHub Actions, realize uma alteração qualquer neste arquivo `README.md` e faça o commit da alteração com a seguinte mensagem: *Commit 1: Running the tests*.
+Os testes serão executados automaticamente no GitHub Actions sempre que um commit é realizado.
+Portanto, para rodar os testes no GitHub Actions, realize uma alteração qualquer neste arquivo `README.md` e faça o commit da alteração com a seguinte mensagem: `Commit 1: Running the tests`.
 
 Em seguida, clique na aba `Actions` e veja que os testes foram executados com sucesso no GitHub Actions. 
-Observe as execuções em múltiplos sistemas operacionais e versões da linguagem Python.
+Observe as execuções em múltiplos sistemas operacionais (Ubuntu, macOS e Windows) e versões da linguagem Python.
 
 # Commit 2: Creating 10 unit tests
 
@@ -101,8 +101,8 @@ Utilize boas práticas, tais como (1) testar comportamentos, não métodos, (2) 
 Rode os testes localmente com o comando `pytest -v tests.py`.
 Só faça o commit com os testes passando.
 
-#### Faça o commit das alterações
-Com os testes passando, faça o commit com a seguinte mensagem: *Commit 2: Creating 10 unit tests*.
+#### Commit
+Com os testes passando, faça o commit com a seguinte mensagem: `Commit 2: Creating 10 unit tests`.
 
 # Commit 3: Testing with fixtures
 
@@ -126,6 +126,6 @@ def test_in(data):
     assert 1 in data
 ```
 
-#### Faça o commit das alterações
-Com os testes passando, faça o commit com a seguinte mensagem: *Commit 3: Testing with fixtures*.
+#### Commit
+Com os testes passando, faça o commit com a seguinte mensagem: `Commit 3: Testing with fixtures`.
 
