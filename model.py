@@ -109,7 +109,7 @@ class Question:
         
         return [selected_choice_id for selected_choice_id in selected_choice_ids if selected_choice_id in self._find_correct_choice_ids()]
     
-    def _create_choice(self, text, is_correct) -> Choice:
+    def _create_choice(self, text: str, is_correct: bool) -> Choice:
         return Choice(id=self._generate_choice_id(), text=text, is_correct=is_correct)
     
     def _generate_choice_id(self) -> int:
@@ -118,7 +118,7 @@ class Question:
         last_choice = self.choices[-1]
         return last_choice.id + 1
 
-    def _find_choice_by_id(self, choice_id: str) -> Choice | None:
+    def _find_choice_by_id(self, choice_id: int) -> Choice | None:
         self._check_valid_choice_id(choice_id)
         for choice in self.choices:
             if choice.id == choice_id:
@@ -128,7 +128,7 @@ class Question:
     def _find_correct_choice_ids(self) -> list[int]:
         return [choice.id for choice in self.choices if choice.is_correct]
 
-    def _check_valid_choice_id(self, choice_id):
+    def _check_valid_choice_id(self, choice_id: int):
         if choice_id not in self._list_choice_ids():
             raise Exception(f'Invalid choice id {choice_id}')
         
