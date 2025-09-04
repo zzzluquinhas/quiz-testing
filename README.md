@@ -64,6 +64,9 @@ $ cd quiz
 
 ### Instale o pytest
 
+> [!NOTE]
+> Antes de instalar a ferramenta, é recomendado criar e ativar um [ambiente virtual Python](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments).
+
 Nossos testes utilizam o framework de testes [pytest](https://docs.pytest.org).
 Instale o pytest:
 
