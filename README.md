@@ -47,7 +47,8 @@ Caso tenha dúvidas, verifique a documentação do GitHub sobre como [criar fork
 
 Neste projeto, utilizamos o [GitHub Actions](https://github.com/features/actions) (ferramenta de CI/CD do GitHub) para executar os testes automaticamente a cada commit.
 
-Abra o arquivo [.github/workflows/tests.yml](https://github.com/andrehora/quiz/blob/main/.github/workflows/tests.yml) e observe que os testes são executados em três sistemas operacionais (Ubuntu, macOS e Windows) e várias versões da linguagem Python. Veja um exemplo em https://github.com/andrehora/quiz/actions/runs/14231638679.
+Abra o arquivo de configuração do GitHub Actions [.github/workflows/tests.yml](https://github.com/andrehora/quiz/blob/main/.github/workflows/tests.yml) e observe que os testes são executados em três sistemas operacionais (Ubuntu, macOS e Windows) e múltiplas versões da linguagem Python.
+Veja um exemplo da execução em: https://github.com/andrehora/quiz/actions/runs/14231638679.
 
 Ative o GitHub Actions no seu repositório.
 Para isso, basta ir na aba `Actions` e clicar no botão verde.
