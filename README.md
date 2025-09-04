@@ -103,7 +103,7 @@ Utilize boas práticas, tais como (1) testar comportamentos, não métodos, (2) 
 Rode os testes localmente com o comando `pytest -v tests.py`.
 Só faça o commit com os testes passando.
 
-#### Faça o commit
+### Faça o commit
 Com os testes passando, faça o commit com a seguinte mensagem: `Commit 2: Creating 10 unit tests`.
 
 # Commit 3: Testing with fixtures
@@ -128,5 +128,5 @@ def test_in(data):
     assert 1 in data
 ```
 
-#### Faça o commit
+### Faça o commit
 Com os testes passando, faça o commit com a seguinte mensagem: `Commit 3: Testing with fixtures`.
