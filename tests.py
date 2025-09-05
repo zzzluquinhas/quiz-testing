@@ -125,3 +125,24 @@ def test_correct_selected_choices_max_selections():
     
     with pytest.raises(Exception):
         question.correct_selected_choices([choice1.id, choice2.id])
+
+@pytest.fixture
+def question() -> Question:
+    q = Question('q1', 1, max_selections=2)
+
+    q.add_choice('a', True)
+    q.add_choice('b', False)
+    q.add_choice('c', False)
+
+    return q
+
+def test_correct_choices_invalid_id(question: Question):
+    result = question.correct_selected_choices([10, question.choices[0].id])
+    assert result == [question.choices[0].id]
+
+def test_override_correct_choices(question: Question):
+    question.set_correct_choices([question.choices[1].id])
+
+    assert question.choices[0].is_correct is True
+    assert question.choices[1].is_correct is True
+    assert question.choices[2].is_correct is False
